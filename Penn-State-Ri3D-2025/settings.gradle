@@ -1,12 +1,11 @@
-import org.gradle.internal.os.OperatingSystem
-
 pluginManagement {
     repositories {
         mavenLocal()
         gradlePluginPortal()
         String frcYear = '2024'
         File frcHome
-        if (OperatingSystem.current().isWindows()) {
+        String osName = System.getProperty("os.name").toLowerCase()
+        if (osName.contains("win")) {
             String publicFolder = System.getenv('PUBLIC')
             if (publicFolder == null) {
                 publicFolder = "C:\\Users\\Public"
