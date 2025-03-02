@@ -95,7 +95,7 @@ dependencies {
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 
     
-    annotationProcessor "org.littletonrobotics.akit.junction:junction-autolog:$akitJson.version"
+   
 }
 
 test {
